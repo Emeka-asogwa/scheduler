@@ -40,11 +40,13 @@ export default function Form(props) {
             value={name}
             placeholder="Enter Student Name"
             onChange={event => setName(event.target.value)}
+            data-testid="student-name-input"
 
           /*
             This must be a controlled component
           */
           />
+
           <section className="appointment__validation">{error}</section>
         </form>
         <InterviewerList
