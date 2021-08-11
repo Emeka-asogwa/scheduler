@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React from "react";
 import useVisualMode from "hooks/useVisualMode";
 import "./styles.scss";
 import Header from "./Header";
@@ -30,7 +30,6 @@ export default function Appointment(props) {
       student: name,
       interviewer
     };
-    // console.log("hello......$$$$$$", interview);
     transition(SAVING);
     props.bookInterview(props.id, interview)
       .then(result => {
