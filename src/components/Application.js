@@ -4,7 +4,7 @@ import useApplicationData from "hooks/useApplicationData";
 
 import "components/Application.scss";
 import DayList from "./DayList";
-import Appointment from "components/Appointment/index";
+import Appointment from "./Appointment/index";
 import { getAppointmentsForDay, getInterview, getInterviewersForDay } from "helpers/selectors";
 
 const appointments = [
@@ -72,6 +72,7 @@ export default function Application(props) {
     return (
       <Appointment
         key={appointment.id}
+        id={appointment.id}
         {...appointment}
         interview={interview}
         bookInterview={bookInterview}
