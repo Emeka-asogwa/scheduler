@@ -6,7 +6,7 @@ For the tests, Storybook is used to test components. Jest and Cypress are used t
 
 ## Final Product
 
-![]()
+![Git showing the functionality of the app](https://github.com/Emeka-asogwa/scheduler/blob/master/docs/scheduler.gif)
 ![]()
 ![]()
 
