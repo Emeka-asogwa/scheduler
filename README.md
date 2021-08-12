@@ -1,6 +1,6 @@
 # Interview Scheduler
 
-This is a single page application (SPA) built using React. The data is retrieved from the API server ([Scheduler API server](https://github.com/Emeka-asogwa/scheduler-api)) using a PostgreSQL database, and the client communicates with the API server over HTTP, using the JSON format.
+This is a single page application (SPA) built using React. The data is retrieved from the [Scheduler API server](https://github.com/Emeka-asogwa/scheduler-api) using a PostgreSQL database, and the client communicates with the API server over HTTP, using the JSON format.
 
 For the tests, Storybook is used to test components. Jest and Cypress are used throughout the development of the project to test the development.
 
