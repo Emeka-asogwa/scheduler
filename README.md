@@ -6,9 +6,41 @@ For the tests, Storybook is used to test components. Jest and Cypress are used t
 
 ## Final Product
 
-![Git showing the functionality of the app](https://github.com/Emeka-asogwa/scheduler/blob/master/docs/scheduler.gif)
-![]()
-![]()
+### Git showing the functionality of the app
+
+!["Git showing the functionality of the app"](https://github.com/Emeka-asogwa/scheduler/blob/master/docs/scheduler.gif)
+
+### Home page
+
+!["Home page"](https://github.com/Emeka-asogwa/scheduler/blob/master/docs/home_page.png)
+
+### Page responsive to screen size
+
+![Page responsive to screen size](https://github.com/Emeka-asogwa/scheduler/blob/master/docs/one_page.png)
+
+### Empty field/Validation feature
+
+[Empty field](https://github.com/Emeka-asogwa/scheduler/blob/master/docs/empty_field.png)
+
+### Saving changes
+
+["Saving changes"](https://github.com/Emeka-asogwa/scheduler/blob/master/docs/saving.png)
+
+### Delete confirmation before final delete
+
+["Delete confirmation before final delete"](https://github.com/Emeka-asogwa/scheduler/blob/master/docs/delete_warning.png)
+
+### Deleting process
+
+["deleting"](https://github.com/Emeka-asogwa/scheduler/blob/master/docs/deleting.png)
+
+### Server error when the API server is inaccessible while deleting schedule
+
+["Server error when the API server is inaccessible"](https://github.com/Emeka-asogwa/scheduler/blob/master/docs/server_error_delete.png)
+
+### Server error when the API server is inaccessible while saving schedule
+
+[](https://github.com/Emeka-asogwa/scheduler/blob/master/docs/server_error_save.png)
 
 ## Functionalities
 
