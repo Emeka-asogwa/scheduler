@@ -1,8 +1,6 @@
 import React from "react";
-
 import { render, cleanup } from "@testing-library/react";
 import { fireEvent } from "@testing-library/react";
-
 import Form from "components/Appointment/Form";
 
 afterEach(cleanup);
@@ -31,8 +29,6 @@ describe("Form", () => {
   });
 
   it("validates that the student name is not blank", () => {
-
-
     /* 1. Create the mock onSave function */
     const onSave = jest.fn();
 
@@ -69,7 +65,6 @@ describe("Form", () => {
     expect(queryByText(/student name cannot be blank/i)).toBeNull();
     expect(onSave).toHaveBeenCalledTimes(1);
     expect(onSave).toHaveBeenCalledWith("Lydia Miller-Jones", 1);
-
   });
 
 
@@ -86,8 +81,6 @@ describe("Form", () => {
       />
     );
     expect(queryByText(/student name cannot be blank/i)).toBeNull();
-
-
   });
 
   it("submits the name entered by the user", () => {
@@ -100,7 +93,6 @@ describe("Form", () => {
 
     fireEvent.change(input, { target: { value: "Lydia Miller-Jones" } });
 
-
     /* 3. Click the save button */
     fireEvent.click(getByAltText("Sylvia Palmer"));
     fireEvent.click(getByText("Save"));
@@ -108,7 +100,6 @@ describe("Form", () => {
     expect(onSave).toHaveBeenCalledTimes(1);
     expect(onSave).toHaveBeenCalledWith("Lydia Miller-Jones", 1);
   });
-
 
   it("calls onCancel and resets the input field", () => {
     const onCancel = jest.fn();
@@ -135,7 +126,5 @@ describe("Form", () => {
 
     expect(onCancel).toHaveBeenCalledTimes(1);
   });
-
-
 });
 

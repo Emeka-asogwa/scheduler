@@ -1,29 +1,16 @@
 import React from "react";
-import axios, * as others from "axios";
+import axios from "axios";
 import { render, cleanup, waitForElement, fireEvent, getByText, getAllByTestId, getByAltText, getByPlaceholderText, queryByText, queryByAltText } from "@testing-library/react";
-
 import Application from "components/Application";
-// import { fireEvent } from "@testing-library/react/dist";
 
 afterEach(cleanup);
 describe("Application", () => {
-  // it("changes the schedule when a new day is selected", () => {
-  //   const { getByText } = render(<Application />);
-
-  //   return waitForElement(() => getByText("Monday"))
-  //     .then(() => {
-  //       fireEvent.click(getByText("Tuesday"));
-  //       expect(getByText("Leopold Silvers")).toBeInTheDocument();
-  //     });
-  // })
 
   it("changes the schedule when a new day is selected", async () => {
     const { getByText } = render(<Application />);
-
     await waitForElement(() => getByText("Monday"));
 
     fireEvent.click(getByText("Tuesday"));
-
     expect(getByText("Leopold Silvers")).toBeInTheDocument();
   });
 
@@ -113,5 +100,4 @@ describe("Application", () => {
     await waitForElement(() => getByText(appointment, "Server Error: could not delete appointment"));
     expect(getByText(appointment, "Server Error: could not delete appointment")).toBeInTheDocument()
   });
-
 });
