@@ -32,7 +32,7 @@ For the tests, Storybook is used to test components. Jest and Cypress are used t
 
 ### Deleting process
 
-["deleting"](https://github.com/Emeka-asogwa/scheduler/blob/master/docs/deleting.png)
+["deleting"](https://github.com/Emeka-asogwa/scheduler/blob/master/docs/deleting1.png)
 
 ### Server error when the API server is inaccessible while deleting schedule
 
